@@ -139,7 +139,9 @@ if($kardex['kardexVaso']!=""){
     
 }
 
-$total=$totalSelladas+$totalJarras+$totalVasos-$descuentoGaseosa;
+$pan=$kardex['kardexFactura'];
+
+$total=$totalSelladas+$totalJarras+$totalVasos-$descuentoGaseosa-$pan;
 $totalEfectivo=$total-$descuentoAgua-$descuento-$visa-$master+$coctel;
 echo $total;
 echo "<br>";

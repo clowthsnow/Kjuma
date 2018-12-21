@@ -40,10 +40,10 @@ if (in_array('5', $_SESSION['permisos'])) {
                                 </li>
                                 <li><a href="page-inventario.php">Inventario</a>
                                 </li>
-<li><a href="page-consumo.php">Hacer Consumo</a>
+                                <li><a href="page-consumo.php">Hacer Consumo</a>
                                 </li>
 
-<li><a href="page-ver-consumo.php">Ver Consumo</a>
+                                <li><a href="page-ver-consumo.php">Ver Consumo</a>
                                 </li>
 
 
@@ -94,6 +94,8 @@ if (in_array('5', $_SESSION['permisos'])) {
                                 <li><a href="page-crear-proveedor.php">Registrar Proveedores</a>
                                 </li>  
                                 <li><a href="page-ver-proveedores.php">Ver Proveedores</a>
+                                </li>
+                                <li><a href="page-ver-factura.php">Facturas</a>
                                 </li>
                             </ul>
                         </div>
@@ -175,46 +177,46 @@ if (in_array('5', $_SESSION['permisos'])) {
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">
                     <?php if (in_array('1', $_SESSION['permisos'])) { ?>
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i>Gestion de Deposito</a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="page-ingreso-mercaderia.php">Ingreso de Licores</a>
-                                </li>
-                                <li><a href="page-salida-mercaderia-notap.php">Salida de Licores</a>
-                                </li>
-                                <li><a href="page-inventario.php">Inventario</a>
-                                </li>
-<li><a href="page-consumo.php">Hacer Consumo</a>
-                                </li>
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i>Gestion de Deposito</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="page-ingreso-mercaderia.php">Ingreso de Licores</a>
+                                    </li>
+                                    <li><a href="page-salida-mercaderia-notap.php">Salida de Licores</a>
+                                    </li>
+                                    <li><a href="page-inventario.php">Inventario</a>
+                                    </li>
+                                    <li><a href="page-consumo.php">Hacer Consumo</a>
+                                    </li>
 
-<li><a href="page-ver-consumo.php">Ver Consumo</a>
-                                </li>
-
-
-
-                                <li class="divider"></li><li><a href="pedido-mes.php">Pedido Mensual</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="page-ver-ingresoMercaderia.php">Ver Ingreso Licores</a>
-                                </li>
-                                <li><a href="page-ver-salidaMercaderia.php">Ver Salidas Licores </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="page-crear-licor.php">Crear Nuevo Licor</a>
-                                </li>    
-                                <li><a href="page-ver-licores.php">Ver Licores</a>
-                                </li> 
-                                <!--                                <li><a href="page-crear-producto.php">Crear Nuevo Producto</a>
-                                                                </li>  
-                                                                 
-                                                                <li><a href="page-ver-productos.php">Ver Productos</a>
-                                                                </li>-->
+                                    <li><a href="page-ver-consumo.php">Ver Consumo</a>
+                                    </li>
 
 
-                            </ul>
-                        </div>
-                    </li>
-           <?php } ?>
+
+                                    <li class="divider"></li><li><a href="pedido-mes.php">Pedido Mensual</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="page-ver-ingresoMercaderia.php">Ver Ingreso Licores</a>
+                                    </li>
+                                    <li><a href="page-ver-salidaMercaderia.php">Ver Salidas Licores </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="page-crear-licor.php">Crear Nuevo Licor</a>
+                                    </li>    
+                                    <li><a href="page-ver-licores.php">Ver Licores</a>
+                                    </li> 
+                                    <!--                                <li><a href="page-crear-producto.php">Crear Nuevo Producto</a>
+                                                                    </li>  
+                                                                     
+                                                                    <li><a href="page-ver-productos.php">Ver Productos</a>
+                                                                    </li>-->
+
+
+                                </ul>
+                            </div>
+                        </li>
+                    <?php } ?>
                     <?php if (in_array('3', $_SESSION['permisos'])) { ?>
                         <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-account-balance-wallet"></i> Gestion de Gastos</a>
                             <div class="collapsible-body">
@@ -240,6 +242,8 @@ if (in_array('5', $_SESSION['permisos'])) {
                                     <li><a href="page-crear-proveedor.php">Registrar Proveedores</a>
                                     </li>  
                                     <li><a href="page-ver-proveedores.php">Ver Proveedores</a>
+                                    </li>
+                                    <li><a href="page-ver-factura.php">Facturas</a>
                                     </li>
                                 </ul>
                             </div>
@@ -278,18 +282,18 @@ if (in_array('5', $_SESSION['permisos'])) {
 
                     <?php } ?>
                     <?php if (in_array('2', $_SESSION['permisos'])) { ?>
-<!--                        <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-credit-card"></i> Gestion de Entradas</a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="form-elements.html">Crear Cliente</a>
-                                    </li>
-                                    <li><a href="form-layouts.html">Ver Clientes</a>
-                                    </li>
-                                    <li><a href="form-layouts.html">Asistencias</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>-->
+        <!--                        <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-credit-card"></i> Gestion de Entradas</a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li><a href="form-elements.html">Crear Cliente</a>
+                                            </li>
+                                            <li><a href="form-layouts.html">Ver Clientes</a>
+                                            </li>
+                                            <li><a href="form-layouts.html">Asistencias</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>-->
 
                     <?php } ?>
 
